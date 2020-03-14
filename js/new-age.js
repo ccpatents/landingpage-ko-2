@@ -4,11 +4,11 @@ var video4;
 var video5;
 var video6;
 
-(function($) {
+(function ($) {
   "use strict"; // Start of use strict
 
   // Smooth scrolling using jQuery easing
-  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function() {
+  $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -22,7 +22,7 @@ var video6;
   });
 
   // Closes responsive menu when a scroll trigger link is clicked
-  $('.js-scroll-trigger').click(function() {
+  $('.js-scroll-trigger').click(function () {
     $('.navbar-collapse').collapse('hide');
   });
 
@@ -33,7 +33,7 @@ var video6;
   });
 
   // Collapse Navbar
-  var navbarCollapse = function() {
+  var navbarCollapse = function () {
     if ($("#mainNav").offset().top > 100) {
       $("#mainNav").addClass("navbar-shrink");
     } else {
@@ -45,21 +45,23 @@ var video6;
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-  /*var tag = document.createElement('script');
+  setTimeout(function () {
+    var tag = document.createElement('script');
 
-  tag.src = "https://www.youtube.com/iframe_api";
-  var firstScriptTag = document.getElementsByTagName('script')[0];
-  firstScriptTag
-    .parentNode
-    .insertBefore(tag, firstScriptTag);
-  
-  $('.close-modal').click(function(){
+    tag.src = "https://www.youtube.com/iframe_api";
+    var firstScriptTag = document.getElementsByTagName('script')[0];
+    firstScriptTag
+      .parentNode
+      .insertBefore(tag, firstScriptTag);
+  }, 300);
+
+  $('.close-modal').click(function () {
     modal_close();
-  });*/
+  });
 
 })(jQuery); // End of use strict
 
-/*function onYouTubeIframeAPIReady() {
+function onYouTubeIframeAPIReady() {
   new YT.Player('video1', {
     width: '100%',
     videoId: 'hJuHVgCmoSw',
@@ -116,19 +118,19 @@ function onPlayerStateChange(event) {
 }
 
 function modal_close() {
-  if(video2 !== null && video2 !== undefined) {
+  if (video2 !== null && video2 !== undefined) {
     video2.pauseVideo();
   }
-  if(video3 !== null && video3 !== undefined) {
+  if (video3 !== null && video3 !== undefined) {
     video3.pauseVideo();
   }
-  if(video4 !== null && video4 !== undefined) {
+  if (video4 !== null && video4 !== undefined) {
     video4.pauseVideo();
   }
-  if(video5 !== null && video5 !== undefined) {
+  if (video5 !== null && video5 !== undefined) {
     video5.pauseVideo();
   }
-  if(video6 !== null && video6 !== undefined) {
+  if (video6 !== null && video6 !== undefined) {
     video6.pauseVideo();
   }
-}*/
+}
