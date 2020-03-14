@@ -1,0 +1,46 @@
+// Styling for the download section
+section.why {
+    position: relative;
+    background-image: linear-gradient(to bottom, #{fade-out($theme-secondary, .3)} 0%, #{fade-out($theme-secondary, .45)} 100%), url('../img/2.png');
+    background-repeat: no-repeat;
+    background-size: cover;
+    color: white;
+    h2 {
+        font-size: 50px;
+        margin-top: 0;
+    }
+
+    b {
+        font-weight: 900;
+    }
+
+    u {
+        text-decoration: none;
+        border-bottom: 3px solid $theme-primary;
+    }
+
+    p {
+        font-size: 20px;
+    }
+    .badges {
+        .badge-link {
+            display: block;
+            margin-bottom: 25px;
+            &:last-child {
+                margin-bottom: 0;
+            }
+            img {
+                height: 60px;
+            }
+            @media(min-width: 768px) {
+                display: inline-block;
+                margin-bottom: 0;
+            }
+        }
+    }
+    @media(min-width: 768px) {
+        h2 {
+            font-size: 70px;
+        }
+    }
+}
