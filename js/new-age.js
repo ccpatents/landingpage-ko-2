@@ -45,7 +45,7 @@ var video6;
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
-  var tag = document.createElement('script');
+  /*var tag = document.createElement('script');
 
   tag.src = "https://www.youtube.com/iframe_api";
   var firstScriptTag = document.getElementsByTagName('script')[0];
@@ -55,11 +55,11 @@ var video6;
   
   $('.close-modal').click(function(){
     modal_close();
-  });
+  });*/
 
 })(jQuery); // End of use strict
 
-function onYouTubeIframeAPIReady() {
+/*function onYouTubeIframeAPIReady() {
   new YT.Player('video1', {
     width: '100%',
     videoId: 'hJuHVgCmoSw',
@@ -131,4 +131,4 @@ function modal_close() {
   if(video6 !== null && video6 !== undefined) {
     video6.pauseVideo();
   }
-}
+}*/
