@@ -1,4 +1,5 @@
 var loop_video;
+var video1;
 var video2;
 var video3;
 var video4;
@@ -10,6 +11,7 @@ var video6;
 
   // Smooth scrolling using jQuery easing
   $('a.js-scroll-trigger[href*="#"]:not([href="#"])').click(function () {
+    modal_close();
     if (location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') && location.hostname == this.hostname) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
@@ -72,7 +74,7 @@ function onYouTubeIframeAPIReady() {
     }
   });
 
-  new YT.Player('video1', {
+  video1 = new YT.Player('video1', {
     width: '100%',
     videoId: 'hJuHVgCmoSw',
     events: {
@@ -139,6 +141,9 @@ function onPlayerStateChange(event) {
 }
 
 function modal_close() {
+  if (video1 !== null && video1 !== undefined) {
+    video1.pauseVideo();
+  }
   if (video2 !== null && video2 !== undefined) {
     video2.pauseVideo();
   }
