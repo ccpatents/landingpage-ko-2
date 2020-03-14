@@ -5,7 +5,7 @@
     @include transition-all;
     @include heading-font;
     .navbar-brand {
-        font-size: 20px;
+        font-size: 23px;
         font-weight: 700;
         color: $theme-primary;
         @include heading-font;
@@ -15,14 +15,15 @@
         }
     }
     .navbar-toggler {
-        font-size: 17px;
+        font-size: 21px;
         padding: 8px 10px;
         color: $gray-darker;
     }
     .navbar-nav {
         > li {
             > a {
-                font-size: 15px;
+                font-size: 18px;
+                padding-right: 20px;
                 @include alt-font;
                 &.active {
                     color: $theme-primary !important;

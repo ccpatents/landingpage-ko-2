@@ -1,3 +1,4 @@
+var loop_video;
 var video2;
 var video3;
 var video4;
@@ -62,6 +63,15 @@ var video6;
 })(jQuery); // End of use strict
 
 function onYouTubeIframeAPIReady() {
+  loop_video = new YT.Player('loop_video', {
+    width: '100%',
+    videoId: 'aCKtJvNOld0',
+    events: {
+      'onReady': onLoopPlayerReady,
+      'onStateChange': onLoopPlayerStateChange
+    }
+  });
+
   new YT.Player('video1', {
     width: '100%',
     videoId: 'hJuHVgCmoSw',
@@ -109,6 +119,17 @@ function onYouTubeIframeAPIReady() {
       'onStateChange': onPlayerStateChange
     }
   });
+}
+
+function onLoopPlayerReady(event) {
+  event.target.mute();
+  event.target.playVideo();
+}
+
+function onLoopPlayerStateChange(event) {
+  if (event.data == YT.PlayerState.ENDED) {
+    event.target.playVideo();
+  }
 }
 
 function onPlayerStateChange(event) {

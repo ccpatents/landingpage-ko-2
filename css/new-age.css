@@ -1,3 +1,10 @@
+@font-face {
+  font-family: 'Cafe24Ohsquare';
+  src: url("https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
 html,
 body {
   width: 100%;
@@ -6,7 +13,7 @@ body {
 }
 
 body {
-  font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: Cafe24Ohsquare;
 }
 
 a {
@@ -40,7 +47,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: Cafe24Ohsquare;
   font-weight: 200;
   letter-spacing: 1px;
 }
@@ -81,16 +88,16 @@ section h2 {
   background-color: white;
   -webkit-transition: all .35s;
   transition: all .35s;
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: Cafe24Ohsquare;
   font-weight: 200;
   letter-spacing: 1px;
 }
 
 #mainNav .navbar-brand {
-  font-size: 20px;
+  font-size: 23px;
   font-weight: 700;
   color: #fdcc52;
-  font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: Cafe24Ohsquare;
   font-weight: 200;
   letter-spacing: 1px;
 }
@@ -100,14 +107,15 @@ section h2 {
 }
 
 #mainNav .navbar-toggler {
-  font-size: 17px;
+  font-size: 21px;
   padding: 8px 10px;
   color: #222222;
 }
 
 #mainNav .navbar-nav > li > a {
-  font-size: 15px;
-  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  font-size: 18px;
+  padding-right: 20px;
+  font-family: Cafe24Ohsquare;
   letter-spacing: 2px;
   text-transform: uppercase;
 }
@@ -268,10 +276,6 @@ section.why .badges .badge-link img {
   }
 }
 
-section.features {
-  padding: 5rem 5rem;
-}
-
 section.features .btn {
   color: #1d1d1d !important;
   border-color: #1d1d1d !important;
@@ -307,6 +311,12 @@ section.features .feature-item i {
   background: linear-gradient(to left, #1d1d1d, #6b6b6b);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
+}
+
+@media (min-width: 992px) {
+  section.features {
+    padding: 7rem 7rem;
+  }
 }
 
 .videos-modal .modal-dialog {
@@ -424,54 +434,53 @@ section.download .download-content h3 {
 }
 
 section.contact {
-  text-align: center;
+  background-color: #222222;
+  background-image: url("../img/map-image.png");
+  background-repeat: no-repeat;
+  background-position: center;
 }
 
-section.contact h2 {
-  margin-top: 0;
+section.contact .section-heading {
+  color: white;
+}
+
+section.contact .form-group {
   margin-bottom: 25px;
 }
 
-section.contact h2 i {
-  color: #dd4b39;
+section.contact .form-group input,
+section.contact .form-group textarea {
+  padding: 20px;
 }
 
-section.contact ul.list-social {
-  margin-bottom: 0;
+section.contact .form-group input.form-control {
+  height: auto;
 }
 
-section.contact ul.list-social li a {
-  font-size: 40px;
-  line-height: 80px;
-  display: block;
-  width: 80px;
-  height: 80px;
-  color: white;
-  border-radius: 100%;
+section.contact .form-group textarea.form-control {
+  height: 248px;
 }
 
-section.contact ul.list-social li.social-twitter a {
-  background-color: #1da1f2;
+section.contact .form-control:focus {
+  border-color: #fdcc52;
+  -webkit-box-shadow: none;
+          box-shadow: none;
 }
 
-section.contact ul.list-social li.social-twitter a:hover {
-  background-color: #0d95e8;
+section.contact ::-webkit-input-placeholder {
+  color: #777777;
 }
 
-section.contact ul.list-social li.social-facebook a {
-  background-color: #3b5998;
+section.contact :-moz-placeholder {
+  color: #777777;
 }
 
-section.contact ul.list-social li.social-facebook a:hover {
-  background-color: #344e86;
+section.contact ::-moz-placeholder {
+  color: #777777;
 }
 
-section.contact ul.list-social li.social-google-plus a {
-  background-color: #dd4b39;
-}
-
-section.contact ul.list-social li.social-google-plus a:hover {
-  background-color: #d73925;
+section.contact :-ms-input-placeholder {
+  color: #777777;
 }
 
 footer {
@@ -528,7 +537,7 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
 
 .btn {
   border-radius: 300px;
-  font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+  font-family: Cafe24Ohsquare;
   letter-spacing: 2px;
   text-transform: uppercase;
 }

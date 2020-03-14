@@ -1,49 +1,44 @@
 // Styling for the download section
 section.contact {
-    text-align: center;
-    h2 {
-        margin-top: 0;
+    background-color: $gray-darker;
+    background-image: url('../img/map-image.png');
+    background-repeat: no-repeat;
+    background-position: center;
+
+    .section-heading {
+        color: white;
+    }
+
+    .form-group {
         margin-bottom: 25px;
-        i {
-            color: $brand-google-plus;
+
+        input,
+        textarea {
+            padding: 20px;
+        }
+
+        input.form-control {
+            height: auto;
+        }
+
+        textarea.form-control {
+            height: 248px;
         }
     }
-    ul.list-social {
-        margin-bottom: 0;
-        li {
-            a {
-                font-size: 40px;
-                line-height: 80px;
-                display: block;
-                width: 80px;
-                height: 80px;
-                color: white;
-                border-radius: 100%;
-            }
-            &.social-twitter {
-                a {
-                    background-color: $brand-twitter;
-                    &:hover {
-                        background-color: darken($brand-twitter, 5%);
-                    }
-                }
-            }
-            &.social-facebook {
-                a {
-                    background-color: $brand-facebook;
-                    &:hover {
-                        background-color: darken($brand-facebook, 5%);
-                    }
-                }
-            }
-            &.social-google-plus {
-                a {
-                    background-color: $brand-google-plus;
-                    &:hover {
-                        background-color: darken($brand-google-plus, 5%);
-                    }
-                }
-            }
-        }
-    }
+    .form-control:focus {
+        border-color: $theme-primary;
+        box-shadow: none;
+      }
+      ::-webkit-input-placeholder {
+        color: $gray-light;
+      }
+      :-moz-placeholder {
+        color: $gray-light;
+      }
+      ::-moz-placeholder {
+        color: $gray-light;
+      }
+      :-ms-input-placeholder {
+        color: $gray-light;
+      }
 }

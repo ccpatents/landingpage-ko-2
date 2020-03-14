@@ -1,4 +1,11 @@
 // Mixins
+@font-face {
+    font-family: 'Cafe24Ohsquare';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/Cafe24Ohsquare.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
 @mixin transition-all() {
     -webkit-transition: all .35s;
     -moz-transition: all .35s;
@@ -16,23 +23,27 @@
     color: $color;
     border-color: $border;
     background-color: $background;
+
     &:focus,
     &.focus {
         color: $color;
         border-color: darken($border, 25%);
         background-color: darken($background, 10%);
     }
+
     &:hover {
         color: $color;
         border-color: darken($border, 12%);
         background-color: darken($background, 10%);
     }
+
     &:active,
     &.active,
-    .open > &.dropdown-toggle {
+    .open>&.dropdown-toggle {
         color: $color;
         border-color: darken($border, 12%);
         background-color: darken($background, 10%);
+
         &:hover,
         &:focus,
         &.focus {
@@ -41,14 +52,17 @@
             background-color: darken($background, 17%);
         }
     }
+
     &:active,
     &.active,
-    .open > &.dropdown-toggle {
+    .open>&.dropdown-toggle {
         background-image: none;
     }
+
     &.disabled,
     &[disabled],
     fieldset[disabled] & {
+
         &:hover,
         &:focus,
         &.focus {
@@ -56,6 +70,7 @@
             background-color: $background;
         }
     }
+
     .badge {
         color: $background;
         background-color: $color;
@@ -63,17 +78,17 @@
 }
 
 @mixin heading-font {
-    font-family: 'Catamaran', 'Helvetica', 'Arial', 'sans-serif';
+    font-family: Cafe24Ohsquare;
     font-weight: 200;
     letter-spacing: 1px;
 }
 
 @mixin body-font {
-    font-family: 'Muli', 'Helvetica', 'Arial', 'sans-serif';
+    font-family: Cafe24Ohsquare;;
 }
 
 @mixin alt-font {
-    font-family: 'Lato', 'Helvetica', 'Arial', 'sans-serif';
+    font-family: Cafe24Ohsquare;
     letter-spacing: 2px;
     text-transform: uppercase;
 }

@@ -103,14 +103,12 @@
         <hr>
       </div>
       <div class="row mt-5">
-        <div class="col-12 col-lg-10 col-xl-6 my-auto mx-auto px-0">
-          <div class="device" data-device="Macbook" data-orientation="portrait" data-color="black"
-            style="width: 100%;">
+        <div class="col-12 col-lg-10 col-xl-6 my-auto mx-auto">
+          <div class="device" data-device="Macbook" data-orientation="portrait" data-color="black">
             <div class="screen">
-              <img src="./img/ccpatents.gif" width="100%" height="100%">
-            </div>
-            <div class="button">
-              <!-- You can hook the "home button" to some JavaScript events or just remove it -->
+              <div class="video-container">
+                <div id="loop_video"></div>
+              </div>
             </div>
           </div>
         </div>
@@ -170,7 +168,37 @@
 
   <section class="contact" id="contact">
     <div class="container">
-      
+      <div class="row pb-5">
+        <div class="col-lg-12 text-center">
+          <h2 class="section-heading text-uppercase pb-3">문의</h2>
+          <h3 class="section-subheading text-muted">버그를 발견했거나 추가하고 싶은 기능이 있으면 메일로 보내주세요.</h3>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-lg-12">
+          <form id="contactForm" class="gform" method="POST" data-email="joondong_kwon@ccpatents.net" action="https://script.google.com/macros/s/AKfycbzi1-P8TFOvR6JCfusdnetFGDQcT-iIpr-2PSSd/exec">
+            <div class="row">
+              <div class="col-md-6">
+                <div class="form-group">
+                  <input class="form-control" name="name" type="text" placeholder="이름" required>
+                </div>
+                <div class="form-group">
+                  <input class="form-control" name="email" type="email" placeholder="이메일" required>
+                </div>
+              </div>
+              <div class="col-md-6">
+                <div class="form-group">
+                  <textarea class="form-control" name="message" placeholder="내용" required></textarea>
+                </div>
+              </div>
+              <div class="col-lg-12 text-center">
+                <div id="success"></div>
+                <button  class="btn btn-outline btn-xl">보내기</button>
+              </div>
+            </div>
+          </form>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -358,6 +386,7 @@
   <!-- Plugin JavaScript -->
   <script src="vendor/jquery-easing/jquery.easing.min.js"></script>
 
+  <script data-cfasync="false" src="js/form-submission-handler.min.js"></script>
   <!-- Custom scripts for this template -->
   <script src="js/new-age.min.js"></script>
 
