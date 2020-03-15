@@ -2,9 +2,18 @@
 section.download {
     position: relative;
     padding: 250px 0;
-    background-image: linear-gradient(to bottom, #{fade-out($gray-dark, .3)} 0%, #{fade-out($gray-dark, .45)} 100%), url('../img/install.png');
+    background-image: url('../img/install.png');
     background-repeat: no-repeat;
     background-size: cover;
+
+    .overlay {
+        position: absolute;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to bottom, #{fade-out($theme-secondary, .3)} 0%, #{fade-out($theme-secondary, .45)} 100%)
+    }
+
     .download-content {
         position: relative;
         z-index: 1;
