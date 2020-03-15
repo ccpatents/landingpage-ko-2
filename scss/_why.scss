@@ -1,8 +1,9 @@
 // Styling for the download section
 section.why {
     position: relative;
-    background-image: url('../img/why_bg.png');
+    background-image: url('../img/why_bg_m.png');
     background-size: cover;
+    background-repeat: no-repeat;
     color: white;
 
     .overlay {
@@ -46,6 +47,13 @@ section.why {
         }
     }
     @media(min-width: 768px) {
+        h2 {
+            font-size: 70px;
+        }
+    }
+
+    @media(min-width: 999px) {
+        background-image: url('../img/why_bg.png');
         h2 {
             font-size: 70px;
         }
