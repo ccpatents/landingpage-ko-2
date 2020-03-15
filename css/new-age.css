@@ -440,6 +440,14 @@ section.contact {
   background-position: center;
 }
 
+section.contact h2 {
+  font-size: 40px;
+}
+
+section.contact h3 {
+  font-size: 30px;
+}
+
 section.contact .section-heading {
   color: white;
 }
@@ -450,7 +458,7 @@ section.contact .form-group {
 
 section.contact .form-group input,
 section.contact .form-group textarea {
-  padding: 20px;
+  padding: 25px;
 }
 
 section.contact .form-group input.form-control {
