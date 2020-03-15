@@ -48,7 +48,17 @@ var video6;
   // Collapse the navbar when page is scrolled
   $(window).scroll(navbarCollapse);
 
- 
+  var siteStellar = function() {
+    $(window).stellar({
+      responsive: false,
+      parallaxBackgrounds: true,
+      parallaxElements: true,
+      horizontalScrolling: false,
+      hideDistantElements: false,
+      scrollProperty: 'scroll'
+    });
+  };
+  siteStellar();
 
   setTimeout(function () {
     var tag = document.createElement('script');
@@ -58,18 +68,6 @@ var video6;
     firstScriptTag
       .parentNode
       .insertBefore(tag, firstScriptTag);
-
-      var siteStellar = function() {
-        $(window).stellar({
-          responsive: false,
-          parallaxBackgrounds: true,
-          parallaxElements: true,
-          horizontalScrolling: false,
-          hideDistantElements: false,
-          scrollProperty: 'scroll'
-        });
-      };
-      siteStellar();
   }, 300);
 
   $('.close-modal').click(function () {
