@@ -242,8 +242,12 @@ section.why .overlay {
 }
 
 section.why h2 {
-  font-size: 50px;
+  font-size: 40px;
   margin-top: 0;
+}
+
+section.why p {
+  font-size: 18px;
 }
 
 section.why b {
@@ -253,10 +257,6 @@ section.why b {
 section.why u {
   text-decoration: none;
   border-bottom: 3px solid #fdcc52;
-}
-
-section.why p {
-  font-size: 20px;
 }
 
 section.why .badges .badge-link {
@@ -281,7 +281,10 @@ section.why .badges .badge-link img {
 
 @media (min-width: 768px) {
   section.why h2 {
-    font-size: 70px;
+    font-size: 50px;
+  }
+  section.why p {
+    font-size: 20px;
   }
 }
 

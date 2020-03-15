@@ -14,8 +14,11 @@ section.why {
         background-image: linear-gradient(to bottom, #{fade-out($theme-secondary, .3)} 0%, #{fade-out($theme-secondary, .45)} 100%)
     }
     h2 {
-        font-size: 50px;
+        font-size: 40px;
         margin-top: 0;
+    }
+    p {
+        font-size: 18px;
     }
 
     b {
@@ -27,9 +30,6 @@ section.why {
         border-bottom: 3px solid $theme-primary;
     }
 
-    p {
-        font-size: 20px;
-    }
     .badges {
         .badge-link {
             display: block;
@@ -48,7 +48,10 @@ section.why {
     }
     @media(min-width: 768px) {
         h2 {
-            font-size: 70px;
+            font-size: 50px;
+        }
+        p {
+            font-size: 20px;
         }
     }
 
