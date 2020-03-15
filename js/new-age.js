@@ -68,7 +68,7 @@ var video6;
     firstScriptTag
       .parentNode
       .insertBefore(tag, firstScriptTag);
-  }, 300);
+  }, 350);
 
   $('.close-modal').click(function () {
     modal_close();
