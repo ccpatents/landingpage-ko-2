@@ -31,6 +31,10 @@ a:hover, a:focus {
   font-size: 15px !important;
 }
 
+.btn-md {
+  font-size: 12px !important;
+}
+
 hr {
   max-width: 100px;
   margin: 25px auto 0;
@@ -335,8 +339,27 @@ section.features .feature-item i {
 }
 
 @media (min-width: 992px) {
+  section.features .feature-item {
+    padding-bottom: 15px;
+  }
+  section.features .feature-item h3 {
+    font-size: 25px;
+  }
+  section.features .feature-item p {
+    font-size: 15px;
+    margin-bottom: 5px;
+  }
+}
+
+@media (min-width: 992px) {
   section.features {
-    padding: 7rem 7rem;
+    padding: 7rem;
+  }
+  section.features .feature-item h3 {
+    font-size: 25px;
+  }
+  section.features .feature-item p {
+    font-size: 15px;
   }
 }
 
@@ -591,3 +614,4 @@ footer ul li a:hover, footer ul li a:focus, footer ul li a:active, footer ul li 
   font-size: 11px;
   padding: 15px 45px;
 }
+/*# sourceMappingURL=new-age.css.map */
